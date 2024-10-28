@@ -1,0 +1,28 @@
+[package]
+name = "p2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy_app = "0.14.2"
+bevy_ecs = "0.14.2"
+chaos-vk = "0.1.1"
+glam = "0.29.0"
+mlua = { version = "0.9.9", features = ["async", "macros", "send"] }
+noise = "0.9.0"
+num_cpus = "1.16.0"
+rand = "0.8.5"
+rlua = "0.20.1"
+threadpool = "1.8.1"
+tokio = { version = "1.41.0", features = ["full"] }
+vulkano = "0.34.1"
+vulkano-shaders = "0.34.0"
+winit = "0.28.0"
+
+# [profile.release]
+# codegen-units = 1
+# lto = "fat"
+# panic = "abort"
+# 
+# [build]
+# rustflags = ["-C", "target-cpu=native"]
